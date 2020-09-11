@@ -1,0 +1,1 @@
+/home/tarmy/ros/fsb/catkin_g2otest/devel/.private/catkin_tools_prebuild/env.sh

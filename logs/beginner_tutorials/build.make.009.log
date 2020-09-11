@@ -1,0 +1,41 @@
+[35m[1mScanning dependencies of target calculate[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/calculate.dir/src/calculate.cpp.o[0m
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:122:18:[m[K [01;31m[Kerror: [m[K‘[01m[KBlock[m[K’ was not declared in this scope
+  std::unique_ptr<Block::LinearSolverType> linearSolver ( new LinearSolverCSparse<BlockSolverX::PoseMatrixType>() );
+[01;32m[K                  ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:122:18:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/Eigen/Core:296:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/g2o/core/eigen_types.h:30[m[K,
+                 from [01m[K/opt/ros/kinetic/include/g2o/config.h:18[m[K,
+                 from [01m[K/opt/ros/kinetic/include/g2o/core/openmp_mutex.h:30[m[K,
+                 from [01m[K/opt/ros/kinetic/include/g2o/core/optimizable_graph.h:37[m[K,
+                 from [01m[K/opt/ros/kinetic/include/g2o/core/base_vertex.h:30[m[K,
+                 from [01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:4[m[K:
+[01m[K/usr/include/Eigen/src/Core/util/ForwardDeclarations.h:85:105:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Block[m[K’
+ template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+[01;32m[K                                                                                                         ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:122:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  std::unique_ptr<Block::LinearSolverType> linearSolver ( new LinearSolverCSparse<BlockSolverX::PoseMatrixType>() );
+[01;32m[K                                         ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:122:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:122:114:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kg2o::LinearSolverCSparse<Eigen::Matrix<double, -1, -1> >*[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  std::unique_ptr<Block::LinearSolverType> linearSolver ( new LinearSolverCSparse<BlockSolverX::PoseMatrixType>() );
+[01;32m[K                                                                                                                  ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:126:70:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kstd::remove_reference<int&>::type {aka int}[m[K’ to ‘[01m[Kg2o::BlockSolver<g2o::BlockSolverTraits<-1, -1> >::LinearSolverType* {aka g2o::LinearSolver<Eigen::Matrix<double, -1, -1> >*}[m[K’ [-fpermissive]
+ std::unique_ptr<BlockSolverX> solver_ptr (new BlockSolverX( std::move(linearSolver) ));
+[01;32m[K                                                                      ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/g2o/core/block_solver.h:189:0[m[K,
+                 from [01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:7[m[K:
+[01m[K/opt/ros/kinetic/include/g2o/core/block_solver.hpp:39:1:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kg2o::BlockSolver<Traits>::BlockSolver(g2o::BlockSolver<Traits>::LinearSolverType*) [with Traits = g2o::BlockSolverTraits<-1, -1>; g2o::BlockSolver<Traits>::LinearSolverType = g2o::LinearSolver<Eigen::Matrix<double, -1, -1> >][m[K’
+ BlockSolver<Traits>::BlockSolver(LinearSolverType* linearSolver) :
+[01;32m[K ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:130:58:[m[K [01;31m[Kerror: [m[K‘[01m[KblockSolver[m[K’ was not declared in this scope
+             new OptimizationAlgorithmLevenberg(std::move(blockSolver));
+[01;32m[K                                                          ^[m[K
+CMakeFiles/calculate.dir/build.make:62: recipe for target 'CMakeFiles/calculate.dir/src/calculate.cpp.o' failed
+make[2]: *** [CMakeFiles/calculate.dir/src/calculate.cpp.o] Error 1
+CMakeFiles/Makefile2:1091: recipe for target 'CMakeFiles/calculate.dir/all' failed
+make[1]: *** [CMakeFiles/calculate.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

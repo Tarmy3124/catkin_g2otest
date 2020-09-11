@@ -1,0 +1,20 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/calculate.dir/src/calculate.cpp.o[0m
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:120:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique[m[K’ was not declared in this scope
+     auto linearSolver=make_unique<LinearSolverCSparse<BlockSolverX::PoseMatrixType>>();
+[01;32m[K                       ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:120:83:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     auto linearSolver=make_unique<LinearSolverCSparse<BlockSolverX::PoseMatrixType>>();
+[01;32m[K                                                                                   ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:120:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+     auto linearSolver=make_unique<LinearSolverCSparse<BlockSolverX::PoseMatrixType>>();
+[01;32m[K                                                                                      ^[m[K
+[01m[K/home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp:123:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     auto blockSolver=make_unique<BlockSolverX>(std::move(linearSolver));
+[01;32m[K                                              ^[m[K
+CMakeFiles/calculate.dir/build.make:62: recipe for target 'CMakeFiles/calculate.dir/src/calculate.cpp.o' failed
+make[2]: *** [CMakeFiles/calculate.dir/src/calculate.cpp.o] Error 1
+CMakeFiles/Makefile2:1091: recipe for target 'CMakeFiles/calculate.dir/all' failed
+make[1]: *** [CMakeFiles/calculate.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

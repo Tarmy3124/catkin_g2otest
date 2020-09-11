@@ -1,0 +1,6 @@
+devel_space: /home/tarmy/ros/fsb/catkin_g2otest/devel
+install: false
+install_space: /home/tarmy/ros/fsb/catkin_g2otest/install
+profile: default
+source_space: /home/tarmy/ros/fsb/catkin_g2otest/src
+workspace: /home/tarmy/ros/fsb/catkin_g2otest
