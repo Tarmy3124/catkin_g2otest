@@ -3,51 +3,6 @@
 
 CMakeFiles/calculate.dir/src/calculate.cpp.o
  /home/tarmy/ros/fsb/catkin_g2otest/src/beginner_tutorials/src/calculate.cpp
- /opt/ros/kinetic/include/g2o/config.h
- /opt/ros/kinetic/include/g2o/core/base_edge.h
- /opt/ros/kinetic/include/g2o/core/base_unary_edge.h
- /opt/ros/kinetic/include/g2o/core/base_unary_edge.hpp
- /opt/ros/kinetic/include/g2o/core/base_vertex.h
- /opt/ros/kinetic/include/g2o/core/base_vertex.hpp
- /opt/ros/kinetic/include/g2o/core/batch_stats.h
- /opt/ros/kinetic/include/g2o/core/block_solver.h
- /opt/ros/kinetic/include/g2o/core/block_solver.hpp
- /opt/ros/kinetic/include/g2o/core/creators.h
- /opt/ros/kinetic/include/g2o/core/eigen_types.h
- /opt/ros/kinetic/include/g2o/core/factory.h
- /opt/ros/kinetic/include/g2o/core/g2o_core_api.h
- /opt/ros/kinetic/include/g2o/core/hyper_graph.h
- /opt/ros/kinetic/include/g2o/core/jacobian_workspace.h
- /opt/ros/kinetic/include/g2o/core/linear_solver.h
- /opt/ros/kinetic/include/g2o/core/marginal_covariance_cholesky.h
- /opt/ros/kinetic/include/g2o/core/matrix_operations.h
- /opt/ros/kinetic/include/g2o/core/matrix_structure.h
- /opt/ros/kinetic/include/g2o/core/openmp_mutex.h
- /opt/ros/kinetic/include/g2o/core/optimizable_graph.h
- /opt/ros/kinetic/include/g2o/core/optimization_algorithm.h
- /opt/ros/kinetic/include/g2o/core/optimization_algorithm_gauss_newton.h
- /opt/ros/kinetic/include/g2o/core/optimization_algorithm_levenberg.h
- /opt/ros/kinetic/include/g2o/core/optimization_algorithm_with_hessian.h
- /opt/ros/kinetic/include/g2o/core/parameter.h
- /opt/ros/kinetic/include/g2o/core/parameter_container.h
- /opt/ros/kinetic/include/g2o/core/robust_kernel.h
- /opt/ros/kinetic/include/g2o/core/solver.h
- /opt/ros/kinetic/include/g2o/core/sparse_block_matrix.h
- /opt/ros/kinetic/include/g2o/core/sparse_block_matrix.hpp
- /opt/ros/kinetic/include/g2o/core/sparse_block_matrix_ccs.h
- /opt/ros/kinetic/include/g2o/core/sparse_block_matrix_diagonal.h
- /opt/ros/kinetic/include/g2o/core/sparse_optimizer.h
- /opt/ros/kinetic/include/g2o/solvers/csparse/csparse_helper.h
- /opt/ros/kinetic/include/g2o/solvers/csparse/g2o_csparse_api.h
- /opt/ros/kinetic/include/g2o/solvers/csparse/g2o_csparse_extension_api.h
- /opt/ros/kinetic/include/g2o/solvers/csparse/linear_solver_csparse.h
- /opt/ros/kinetic/include/g2o/stuff/command_args.h
- /opt/ros/kinetic/include/g2o/stuff/g2o_stuff_api.h
- /opt/ros/kinetic/include/g2o/stuff/macros.h
- /opt/ros/kinetic/include/g2o/stuff/misc.h
- /opt/ros/kinetic/include/g2o/stuff/property.h
- /opt/ros/kinetic/include/g2o/stuff/string_tools.h
- /opt/ros/kinetic/include/g2o/stuff/timeutil.h
  /opt/ros/kinetic/include/geometry_msgs/Point.h
  /opt/ros/kinetic/include/geometry_msgs/PointStamped.h
  /opt/ros/kinetic/include/geometry_msgs/Pose.h
@@ -281,5 +236,3 @@ CMakeFiles/calculate.dir/src/calculate.cpp.o
  /opt/ros/kinetic/include/visualization_msgs/Marker.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
- /usr/include/suitesparse/SuiteSparse_config.h
- /usr/include/suitesparse/cs.h

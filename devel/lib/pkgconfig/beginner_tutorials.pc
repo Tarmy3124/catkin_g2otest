@@ -1,0 +1,1 @@
+/home/tarmy/ros/fsb/catkin_g2otest/devel/.private/beginner_tutorials/lib/pkgconfig/beginner_tutorials.pc

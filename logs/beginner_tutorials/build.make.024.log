@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target calculate[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/calculate.dir/src/calculate.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/tarmy/ros/fsb/catkin_g2otest/devel/.private/beginner_tutorials/lib/beginner_tutorials/calculate[0m
+[100%] Built target calculate

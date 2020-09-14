@@ -1,0 +1,4 @@
+Symlinking /home/tarmy/ros/fsb/catkin_g2otest/devel/lib/pkgconfig/beginner_tutorials.pc
+Symlinking /home/tarmy/ros/fsb/catkin_g2otest/devel/lib/beginner_tutorials/calculate
+Symlinking /home/tarmy/ros/fsb/catkin_g2otest/devel/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+Symlinking /home/tarmy/ros/fsb/catkin_g2otest/devel/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake

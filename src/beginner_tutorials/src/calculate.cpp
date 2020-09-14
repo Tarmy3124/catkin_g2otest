@@ -92,7 +92,7 @@ int main(int argc, char **argv)
     nav_msgs::Path gui_path;
     //nav_msgs::Path path;
     gui_path.header.stamp=ros::Time::now();
-    gui_path.header.frame_id="gui_path";
+    gui_path.header.frame_id="world";
   // Set our initial shape type to be a cube
   uint32_t shape = visualization_msgs::Marker::CUBE;
    
@@ -179,7 +179,7 @@ int main(int argc, char **argv)
         visualization_msgs::Marker marker;
         geometry_msgs::Vector3 xypoint;
     // Set the frame ID and timestamp.  See the TF tutorials for information on these.
-    marker.header.frame_id = "/world";
+    marker.header.frame_id = "world";
     marker.header.stamp = ros::Time::now();
 
     // Set the namespace and id for this marker.  This serves to create a unique ID
@@ -201,7 +201,7 @@ int main(int argc, char **argv)
         this_pose_stamped.pose.position.x = x_data[xyindex];;
         this_pose_stamped.pose.position.y = y_data[xyindex];
         this_pose_stamped.header.stamp=ros::Time::now();
-        this_pose_stamped.header.frame_id="pose_stamped";
+        this_pose_stamped.header.frame_id="world";
         gui_path.poses.push_back(this_pose_stamped);
 
 

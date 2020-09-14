@@ -8,7 +8,7 @@ add_compile_options(-std=c++11)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-list(APPEND CMAKE_MODULE_PATH /home/tarmy/work/tfly/g2o/cmake_modules)
+list( APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules )
 find_package(OpenCV 3.3.1 REQUIRED)
 find_package(G2O REQUIRED)
 find_package(CSparse REQUIRED)
@@ -131,7 +131,7 @@ include_directories(
 ${CSPARSE_INCLUDE_DIR}
   ${OpenCV_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
-  ${G2O_DIRS}
+  ${G2O_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -156,7 +156,7 @@ add_executable(calculate src/calculate.cpp)
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 
-target_link_libraries(calculate ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CSPARSE_LIBRARY} g2o_core g2o_stuff g2o_types_slam3d 
+target_link_libraries(calculate ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CSPARSE_LIBRARY} ${G2O_LIBRARY} g2o_core g2o_stuff g2o_types_slam3d 
 g2o_types_sba g2o_csparse_extension g2o_solver_csparse cholmod g2o_solver_cholmod)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
